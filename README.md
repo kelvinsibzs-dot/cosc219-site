@@ -1,49 +1,40 @@
 # COSC 219 Lab 3 — Responsive Personal Portfolio
 
-A four-page responsive personal portfolio about my interests and projects.
+This project is a four-page responsive personal portfolio about my interests and projects.
 
 ## Pages
 
-- Home (`index.html`)
-- About (`about.html`)
-- Projects (`projects.html`)
-- Contact (`contact.html`)
-
-## How to view
-
-Open `index.html` with Live Server in VS Code. Use the navigation links to visit each page.
+- Home
+- About
+- Projects
+- Contact
 
 ## Responsive Layout
 
-The website was designed using a mobile-first approach. The base CSS is designed for narrow screens, and `min-width` media queries add more complex layouts when more space is available.
+I used a mobile-first approach for the website. The base CSS is designed for smaller screens, and I used `min-width` media queries to change the layout when more space is available.
 
-### Breakpoints
+My first breakpoint is `38rem`. I chose this point because below this size there is not enough space for the navigation and multiple columns to fit comfortably. At this breakpoint, the navigation changes to a row, the project cards change to two columns, and the About page changes to a two-column layout.
 
-- `38rem` — At smaller widths, the navigation and content need more space to remain readable. At this breakpoint, the navigation changes to a horizontal layout, the project cards change to two columns, and the About page changes to a two-column layout.
-- `58rem` — At this width, there is enough space for the project cards to display in three columns without becoming too narrow.
+My second breakpoint is `58rem`. I chose this point because there is enough space for three project cards to fit beside each other without becoming too narrow. At this breakpoint, the project section changes to three columns.
 
 ## Flexbox and Grid
 
-I used Flexbox for the navigation because the navigation links are arranged along one main axis. On narrow screens the navigation stacks vertically, and on wider screens it changes to a horizontal row.
+I used Flexbox for the navigation because the navigation items are arranged along one direction. On smaller screens, the navigation stacks vertically, and on wider screens it changes to a row.
 
-I used CSS Grid for the project cards because the cards need to be arranged in rows and columns. The cards display in one column on narrow screens, two columns at the first breakpoint, and three columns at the larger breakpoint.
+I used CSS Grid for the project cards because the cards need to be arranged in rows and columns. The cards change from one column to two columns and then three columns as the screen gets wider.
 
-I also used CSS Grid for the About page layout. On narrow screens the content is displayed in one column. On wider screens it changes to a main content column and a narrower sidebar.
-
-## Responsive Images
-
-Images use `max-width: 100%` and `height: auto` so they stay inside their containers and resize with the page.
-
-## AI Use
-
-I used AI assistance to help understand the lab requirements and to help with the responsive CSS structure, including Flexbox, Grid, and media queries. I reviewed and applied the code to my project and tested the website using the provided self-checker.
+I also used Grid on the About page to create a main section and a smaller sidebar. On narrow screens, they stack into one column.
 
 ## Testing
 
-- Tested at 320px, 768px, and 1280px
-- Checked for horizontal overflow
-- Checked navigation readability
-- Checked responsive project cards
-- Checked the responsive About page layout
-- Tested keyboard focus and navigation
-- Used the provided Lab 3 self-checker
+I tested the website at different screen sizes, including 320px, 768px, and 1280px. There is no horizontal scrolling.
+
+The Lab 3 self-checker reports 25 passed and 0 to fix.
+
+I also checked the website using keyboard navigation and confirmed that the focus is visible.
+
+The HTML pages and CSS were validated successfully.
+
+## AI Use
+
+I used AI for guidance and explanations while completing the lab. I reviewed and understood the code before using it in my project.
