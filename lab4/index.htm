@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Guess</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Word Guess</h1>
+
+    <p id="word" class="word"></p>
+    <p id="status" class="status"></p>
+    <p id="result" class="result"></p>
+
+    <form id="guess-form">
+      <label for="guess">Your guess</label>
+      <input id="guess" type="text" maxlength="1">
+      <button type="submit">Guess</button>
+      <button type="button" id="new-game">New game</button>
+    </form>
+  </main>
+
+  <script src="game.js"></script>
+  <script src="play.js"></script>
+</body>
+</html>
