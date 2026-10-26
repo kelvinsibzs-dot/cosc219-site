@@ -11,3 +11,6 @@ One thing I had to be careful with was sorting the trails by distance without ch
 ## AI Use Declaration
 
 I used ChatGPT to help me understand the instructions, work through the code, and fix errors. I also ran the provided self-check tests to make sure my functions were working correctly.
+## Testing
+
+All 35 self-check tests passed, and the original trail data remained in its original order.
