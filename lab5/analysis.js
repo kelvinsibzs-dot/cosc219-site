@@ -47,7 +47,7 @@ function findByName(trails, name) {
     return trail.name.toLowerCase() === name.toLowerCase();
   });
 }
-
+// Copy the array first so sorting does not change the original trail data.
 // B4 — sortedByDistance(trails)
 function sortedByDistance(trails) {
   return trails.slice().sort(function(a, b) {
