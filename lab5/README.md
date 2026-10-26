@@ -14,3 +14,7 @@ I used ChatGPT to help me understand the instructions, work through the code, an
 ## Testing
 
 All 35 self-check tests passed, and the original trail data remained in its original order.
+
+## What I Learned
+
+I practised using map(), filter(), find(), some(), every(), and reduce() to work with arrays. I also learned to copy an array before sorting so the original data stays unchanged.
