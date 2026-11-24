@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okanagan Trail Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Okanagan Trail Browser</h1>
+
+        <p>
+            Explore hiking trails around the Okanagan Valley.
+            Search for trails and filter them by difficulty.
+        </p>
+
+        <section>
+            <h2>Find a Trail</h2>
+
+            <form id="controls">
+
+                <label for="search">Search for a trail:</label>
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Enter trail name"
+                >
+
+                <label for="rating">Select difficulty:</label>
+                <select id="rating">
+                    <option value="all">All difficulties</option>
+                    <option value="easy">Easy</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="hard">Hard</option>
+                </select>
+
+                <button type="submit">Apply</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Trail Results</h2>
+
+            <p id="count">0 trails</p>
+
+            <ul id="results"></ul>
+        </section>
+
+    </main>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>

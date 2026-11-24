@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8 - Trail Browser Checker</title>
+</head>
+<body>
+
+    <main>
+        <h1>What is still broken?</h1>
+        <p>Eight faults. This page tells you which remain.</p>
+        <div id="check-output"></div>
+    </main>
+
+    <div hidden>
+        <form id="controls">
+            <label for="search">Search</label>
+            <input id="search" type="search">
+
+            <label for="rating">Rating</label>
+            <select id="rating">
+                <option value="all">All</option>
+            </select>
+
+            <button type="submit">Apply</button>
+        </form>
+
+        <p id="count"></p>
+        <ul id="results"></ul>
+    </div>
+
+    <script type="module" src="./check.js"></script>
+
+</body>
+</html>
